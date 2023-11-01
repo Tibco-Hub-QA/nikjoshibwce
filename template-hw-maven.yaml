@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: bwce-template-hw-maven
-  title: BWCE Template (HW) - Maven 2
+  title: BWCE Template (HW) - Maven 3
   description: Create a new BWCE project with Documentation
   tags:
     - tibco
@@ -60,7 +60,7 @@ spec:
       name: BWCE Skeleton
       action: fetch:template
       input:
-        url: ./skeleton-hw
+        url: ./skeleton-hw-maven
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
