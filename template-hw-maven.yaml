@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: bwce-template-hw-maven
-  title: BWCE Template (HW) - Maven
+  title: BWCE Template (HW) - Maven 2
   description: Create a new BWCE project with Documentation
   tags:
     - tibco
@@ -88,7 +88,7 @@ spec:
       action: tibco:jenkins-trigger-ear-build
       input:
         name: ${{ parameters.name }}
-        job: Project Build_BWCE_EAR_Maven_Generic
+        job: Build_BWCE_EAR_Maven_Generic
         jenkinsInstructions: '&bw_project_folder=HelloWorld'
 
   output:
